@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#00174b","surface-variant":"#dae2fd","inverse-surface":"#283044","surface-dim":"#d2d9f4","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","secondary-container":"#316bf3","surface-container":"#eaedff","on-primary-fixed":"#00164e","error-container":"#ffdad6","primary":"#00236f","secondary-fixed":"#dbe1ff","inverse-on-surface":"#eef0ff","on-tertiary-fixed":"#00201d","on-secondary-fixed-variant":"#003ea8","secondary":"#0051d5","inverse-primary":"#b6c4ff","on-primary-container":"#90a8ff","primary-container":"#1e3a8a","tertiary-container":"#004942","on-surface":"#131b2e","on-tertiary-container":"#4ebdb0","surface-container-high":"#e2e7ff","on-tertiary":"#ffffff","outline":"#757682","primary-fixed":"#dce1ff","surface":"#faf8ff","outline-variant":"#c5c5d3","secondary-fixed-dim":"#b4c5ff","primary-fixed-dim":"#b6c4ff","surface-container-low":"#f2f3ff","on-background":"#131b2e","surface-tint":"#4059aa","on-secondary-container":"#fefcff","surface-container-lowest":"#ffffff","tertiary":"#00312c","background":"#faf8ff","tertiary-fixed":"#89f5e7","error":"#ba1a1a","surface-bright":"#faf8ff","on-error":"#ffffff","on-primary-fixed-variant":"#264191","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005049","on-primary":"#ffffff","tertiary-fixed-dim":"#6bd8cb","on-surface-variant":"#444651"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-compact":"0.5rem","margin":"1.5rem","space-lg":"1.25rem","space-md":"0.75rem","space-xl":"1.75rem","gutter":"1rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"data-metric":["JetBrains Mono"],"label-md":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"headline-sm":["Inter"],"label-lg":["JetBrains Mono"],"headline-xl":["Inter"],"data-display":["JetBrains Mono"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"data-metric":["13px",{"lineHeight":"16px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"data-display":["20px",{"lineHeight":"24px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-gutter flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[24px]">apartment</span><span class="font-headline-sm text-headline-sm text-primary tracking-tight">현장별 공정·기성 대시보드</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">(Field Progress & Cost Dashboard)</span></div><div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">school</span><span>[교육용 가상 데이터] 본 화면은 가상 실습용 자료입니다</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg" data-active-classes="bg-primary text-on-primary font-headline-sm rounded-lg"><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-headline-sm text-headline-sm" data-path="overview-and-trends" href="#">현황 요약</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-headline-sm text-headline-sm" data-path="site-comparison-and-log" href="#">현장별 비교표</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary text-on-primary font-headline-sm rounded-lg" data-path="data-import-and-validation" href="#">자료 가져오기</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-headline-sm text-headline-sm" data-path="ai-assistant" href="#">AI에게 묻기</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">calendar_today</span><span>기준: 2026년 09월</span></div><button class="flex items-center gap-space-xs px-space-md py-1.5 bg-primary-container text-on-primary rounded-lg hover:bg-primary transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[16px]">download</span><span>CSV 내보내기 (19개 열)</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden md:block"><div class="font-label-md text-label-md text-on-surface font-semibold">본사 공무팀 김담당</div><div class="font-label-sm text-label-sm text-on-surface-variant">본사 공정원가관리팀</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div><div class="flex items-center justify-between gap-space-md pt-space-xs bg-surface-container-low px-space-md py-1.5 rounded-lg"><div class="flex items-center flex-wrap gap-space-md"><div class="flex items-center gap-space-xs"><label class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">date_range</span>기준월</label><select class="h-8 px-space-sm rounded bg-surface-container-lowest text-on-surface font-data-metric text-data-metric outline-none focus:ring-1 focus:ring-secondary"><option selected="" value="2026-09">2026.09 (당월)</option><option value="2026-08">2026.08</option><option value="2026-07">2026.07</option><option value="2026-06">2026.06</option><option value="2026-05">2026.05</option><option value="2026-04">2026.04</option><option value="2026-03">2026.03</option><option value="2026-02">2026.02</option><option value="2026-01">2026.01</option><option value="2025-12">2025.12</option><option value="2025-11">2025.11</option><option value="2025-10">2025.10</option></select></div><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-xs"><label class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">location_on</span>지역</label><select class="h-8 px-space-sm rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary"><option selected="" value="all">전체 지역</option><option value="seoul">서울권역</option><option value="incheon">인천권역</option><option value="gyeonggi">경기권역</option><option value="chungcheong">충청권역</option><option value="others">기타권역</option></select></div><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-xs"><label class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">domain</span>공사 유형</label><select class="h-8 px-space-sm rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary"><option selected="" value="all">전체 유형</option><option value="apt">공동주택</option><option value="infra">토목/인프라</option><option value="complex">복합시설</option><option value="plant">플랜트/물류</option></select></div><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-xs"><label class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">fact_check</span>현장 선택</label><select class="h-8 px-space-sm rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-secondary"><option selected="" value="all">전체 12개 현장 (A~L)</option><option value="site-a">[A] 서울 마곡 마이스 복합단지</option><option value="site-b">[B] 송도 바이오클러스터 4공구</option><option value="site-c">[C] 판교 알파돔 제2업무시설</option><option value="site-d">[D] 천안 불당 공동주택 2단지</option><option value="site-e">[E] 고양 창릉 공공주택지구 A1</option><option value="site-f">[F] 평택 포승 물류복합센터</option><option value="site-g">[G] 청주 오송 스마트그린산단</option><option value="site-h">[H] 안양 호원지구 재개발</option><option value="site-i">[I] 화성 동탄 업무복합타워</option><option value="site-j">[J] 인천 검단 지하차도 개설</option><option value="site-k">[K] 아산 탕정 디스플레이단지</option><option value="site-l">[L] 용인 반도체 클러스터 기반</option></select></div></div><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>연동상태: 정상</span><button class="hover:text-primary transition-colors flex items-center gap-0.5" type="button"><span class="material-symbols-outlined text-[14px]">restart_alt</span>필터 초기화</button></div></div></div></header><main class="w-full pt-28 px-gutter bg-surface min-h-[calc(100vh-48px)]"><div class="flex flex-col w-full">
+<div class="w-full py-space-sm">
+<!-- Top Step / Status Progress Rail -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">자료 가져오기 및 데이터 무결성 검증 센터</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">검증 예외 3건 감지</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">본사 공정기성 심사 DB와 대사하여 누적액, 공정률 상한, 레코드 식별키의 정합성을 사전 점검합니다.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[18px]">security</span>
+<span class="font-label-sm text-label-sm text-on-surface">현재 운영 DB 레코드: <span class="font-data-metric font-bold text-primary">144행</span> (안전 보장 모드)</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+<span>양식 가이드 다운로드</span>
+</button>
+</div>
+</div>
+<!-- Main Grid: Upload & Inspection Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Left 5 Cols: File Ingestion Dropzone & Protocol Checklist -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<!-- Drag and Drop Canvas -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary/5 rounded-full pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">upload_file</span>
+                데이터 파일 수신 (CSV / JSON)
+              </span>
+<span class="font-label-sm text-label-sm text-outline">최대 25MB 지원</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              현장별 공정·기성 집계표 원본을 업로드하면 시스템이 6대 규격에 따라 즉시 적격성 심사를 수행합니다.
+            </p>
+<!-- Drop Target Zone -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-lg flex flex-col items-center justify-center text-center cursor-pointer transition-all hover:bg-surface-container duration-150" id="dropzone">
+<div class="w-14 h-14 rounded-full bg-secondary/10 text-secondary flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[28px]">file_upload</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface mb-0.5">이곳으로 파일을 끌어다 놓으세요</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">또는 로컬 디스크에서 탐색기를 열어 지정</p>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+                  파일 직접 찾아보기
+                </span>
+<span class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                  .CSV, .JSON 지원
+                </span>
+</div>
+<input accept=".csv,.json" class="hidden" id="file-input" type="file"/>
+</div>
+</div>
+<!-- Staged File Status Badge -->
+<div class="mt-space-md bg-surface-container rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">draft</span>
+<div class="truncate">
+<div class="font-data-metric text-data-metric text-on-surface truncate">2026_Q3_ALL_SITES_MONTHLY_REV3.csv</div>
+<div class="font-label-sm text-label-sm text-outline">184.2 KB · UTF-8 인코딩 감지됨</div>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm shrink-0">검사 완료됨</span>
+</div>
+<!-- Automated Validation Spec Rules -->
+<div class="mt-space-lg">
+<div class="font-label-md text-label-md text-on-surface font-semibold mb-space-xs flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">rule</span>
+<span>자동 무결성 심사 6대 규칙 (Engine Specs)</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px] mt-0.5">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-medium">필수 필드 누락 검사</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">19개 표준 속성 헤더 전수 대사</div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px] mt-0.5">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-medium">수치 범위 적정성</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">공정률 0~100%, 기성액 ≥ 0 검증</div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px] mt-0.5">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-medium">복합 유일키 중복 검증</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">[기준월 + 현장코드] 복합 충돌 방지</div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px] mt-0.5">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-medium">표준 날짜 포맷팅</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">YYYY-MM ISO 규격 유효성 판정</div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px] mt-0.5">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-medium">현장 마스터 일관성</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">전사 12개 프로젝트 식별코드 대조</div>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[14px] mt-0.5">check_circle</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface font-medium">누적 시계열 무결성</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">전월 누적 대비 단조 증가성 확인</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safe Mode Guarantee Notice -->
+<div class="bg-secondary-fixed/30 rounded-xl p-space-md flex items-start gap-space-md shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-secondary-fixed font-semibold">데이터 롤백 무결성 보장 (Zero Loss Safeguard)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+              업로드 파일에 오류가 감지된 상태에서 <span class="font-semibold text-primary">[미리보기 취소]</span>를 누르거나 페이지를 벗어나더라도, 본사 운영 데이터베이스(현행 144행)는 <strong>단 1건의 손실 없이 완벽히 유지</strong>됩니다.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right 7 Cols: Validation Summary & Specific Error Breakdown -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- Inspection Metrics Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">유효성 검사 결과 대시보드</span>
+<span class="font-label-sm text-label-sm text-outline">대조 시각: 2026.09.28 14:32:04</span>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-error-container text-on-error-container font-label-md text-label-md font-bold">
+              오류 3건 · 경고 1건
+            </span>
+</div>
+<!-- KPI Metric Quad -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">검사 대상 총 레코드</div>
+<div class="font-data-display text-data-display text-on-surface mt-1 flex items-baseline gap-1">
+<span>144</span>
+<span class="font-label-sm text-label-sm text-outline">행</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px] mt-0.5">12개 현장 × 12개월분</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<div class="font-label-sm text-label-sm text-secondary font-medium">유효 판정 레코드</div>
+<div class="font-data-display text-data-display text-secondary mt-1 flex items-baseline gap-1">
+<span>141</span>
+<span class="font-label-sm text-label-sm text-secondary">행</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-tertiary-container text-[11px] mt-0.5">정상 적합률 97.9%</div>
+</div>
+<div class="bg-error-container/30 rounded-lg p-space-sm">
+<div class="font-label-sm text-label-sm text-error font-medium">차단 오류 (Error)</div>
+<div class="font-data-display text-data-display text-error mt-1 flex items-baseline gap-1">
+<span>3</span>
+<span class="font-label-sm text-label-sm text-error">행</span>
+</div>
+<div class="font-body-sm text-body-sm text-error text-[11px] mt-0.5">치명적 데이터 위반</div>
+</div>
+<div class="bg-surface-container-high rounded-lg p-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">주의 권고 (Warning)</div>
+<div class="font-data-display text-data-display text-on-surface mt-1 flex items-baseline gap-1">
+<span>1</span>
+<span class="font-label-sm text-label-sm text-outline">행</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px] mt-0.5">월별 불연속 누락 주의</div>
+</div>
+</div>
+<!-- Visual Bar Representation of Integrity Ratio -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>수신 데이터 적합성 비율 (141 유효 / 3 오류)</span>
+<span class="font-data-metric text-error font-bold">오류율 2.08% (수정 필수)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-secondary" style="width: 97.9%;"></div>
+<div class="h-full bg-error" style="width: 2.1%;"></div>
+</div>
+</div>
+</div>
+<!-- Detailed Discrepancy Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">gpp_maybe</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">정밀 오류 및 주의사항 상세 내역</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>총 4개 항목 감지</span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container font-label-md text-label-md text-on-surface-variant uppercase">
+<th class="py-2.5 px-space-md font-semibold">심각도</th>
+<th class="py-2.5 px-space-md font-semibold">대상 현장 / 월</th>
+<th class="py-2.5 px-space-md font-semibold">위반 항목</th>
+<th class="py-2.5 px-space-md font-semibold">입력값 vs 정상 허용 기준</th>
+<th class="py-2.5 px-space-md font-semibold text-right">조치 가이드</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Error 1 -->
+<tr class="hover:bg-error-container/10 transition-colors">
+<td class="py-space-sm px-space-md align-middle">
+<span class="px-space-xs py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">cancel</span>오류 1
+                    </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-headline-sm text-headline-sm text-on-surface">[C] 판교 알파돔 제2업무</div>
+<div class="font-data-metric text-data-metric text-outline text-[11px]">2026년 05월 (No.53)</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-label-md text-label-md text-error font-semibold">누적기성액 음수 입력</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">금액 범위 규칙 위반</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-metric text-data-metric text-error line-through">-1,200 백만원</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-data-metric text-data-metric text-primary font-bold">기성액 ≥ 0 백만원</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">기성액은 감액 정산 시에도 누적값 음수 불가</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button">
+                      정정 입력
+                    </button>
+</td>
+</tr>
+<!-- Error 2 -->
+<tr class="hover:bg-error-container/10 transition-colors">
+<td class="py-space-sm px-space-md align-middle">
+<span class="px-space-xs py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">cancel</span>오류 2
+                    </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-headline-sm text-headline-sm text-on-surface">[F] 평택 포승 물류복합센터</div>
+<div class="font-data-metric text-data-metric text-outline text-[11px]">2026년 07월 (No.89)</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-label-md text-label-md text-error font-semibold">계획공정률 100% 초과</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">진도율 상한 초과 위반</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-metric text-data-metric text-error line-through">102.5%</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-data-metric text-data-metric text-primary font-bold">0.0% ~ 100.0%</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">준공 전 공정률 상한값 100% 초과 불가</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button">
+                      정정 입력
+                    </button>
+</td>
+</tr>
+<!-- Error 3 -->
+<tr class="hover:bg-error-container/10 transition-colors">
+<td class="py-space-sm px-space-md align-middle">
+<span class="px-space-xs py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">cancel</span>오류 3
+                    </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-headline-sm text-headline-sm text-on-surface">[H] 안양 호원지구 재개발</div>
+<div class="font-data-metric text-data-metric text-outline text-[11px]">2025년 12월 (No.112, 113)</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-label-md text-label-md text-error font-semibold">중복 레코드 발견</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">식별키 충돌 (동일 월 다중 제출)</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-metric text-data-metric text-error font-semibold">2개 중복 행</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-data-metric text-data-metric text-primary font-bold">월별 1개 행 유일</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">1차 감리분과 2차 수정본이 동시 수신됨</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button">
+                      중복 정리
+                    </button>
+</td>
+</tr>
+<!-- Warning 1 -->
+<tr class="hover:bg-surface-container-high/30 transition-colors">
+<td class="py-space-sm px-space-md align-middle">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">warning</span>주의
+                    </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-headline-sm text-headline-sm text-on-surface">[B] 송도 바이오 4공구</div>
+<div class="font-data-metric text-data-metric text-outline text-[11px]">2026년 02월 (누락 감지)</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-label-md text-label-md text-on-surface font-semibold">월별 시계열 데이터 누락 경고</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">2026.01에서 2026.03으로 직행</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+                      확인 가능한 11개 월 우선 집계 승인 권고
+                    </div>
+<div class="font-body-sm text-body-sm text-outline text-[11px]">보정 전월치 이월 또는 보간 처리 가능</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button">
+                      예외 승인
+                    </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-error">info</span>
+              오류 3건이 해결되지 않은 상태에서는 전체 교체(Overwrite)가 안전하게 차단됩니다.
+            </span>
+<span class="font-data-metric text-data-metric">Validation Engine v4.2 Core</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Replacement Action & Conflict Resolution Deck -->
+<div class="w-full mt-space-md bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">lock_clock</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span>자료 교체(Overwrite) 대기 상태</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm font-normal">안전 잠금 활성</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              미리보기를 취소하면 업로드 시도가 파기되며 기존 144행 자료가 100% 온전하게 보존됩니다. 오류를 정정한 후 교체 작업을 완료할 수 있습니다.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full lg:w-auto justify-end">
+<!-- Cancel & Revert Action -->
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md flex items-center gap-space-xs shadow-sm" id="btn-cancel" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>미리보기 취소 (기존 데이터 144행 완벽 유지)</span>
+</button>
+<!-- Fix & Replace Action -->
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md flex items-center gap-space-xs shadow-md group" id="btn-resolve-overwrite" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform">auto_fix_high</span>
+<span>오류 3건 수정 후 전체 교체 승인</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Educational Bottom Audit Trace Log -->
+<div class="w-full mt-space-md p-space-sm rounded-lg bg-surface-container-low flex flex-wrap items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-bold">AUDIT #VAL-202609-009</span>
+<span>감리 검증 프로토콜: KS F 1001 및 국토교통부 표준 시방서 기준 누적 기성 적합성 테스트 통과 여부 검사기록 보존됨</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>세션 만료: 29분 남음</span>
+<button class="hover:text-primary transition-colors underline" type="button">검사 원장 로그 내보내기</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('file-input');
+    const btnCancel = document.getElementById('btn-cancel');
+    const btnResolveOverwrite = document.getElementById('btn-resolve-overwrite');
+
+    if (dropzone && fileInput) {
+      dropzone.addEventListener('click', () => fileInput.click());
+      
+      dropzone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropzone.classList.add('bg-surface-container-highest');
+      });
+
+      dropzone.addEventListener('dragleave', () => {
+        dropzone.classList.remove('bg-surface-container-highest');
+      });
+
+      dropzone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropzone.classList.remove('bg-surface-container-highest');
+        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+          alert('[' + e.dataTransfer.files[0].name + '] 파일을 수신하여 6대 무결성 심사를 재실행합니다.');
+        }
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+          alert('[' + e.target.files[0].name + '] 파일을 업로드하여 정밀 검사를 진행합니다.');
+        }
+      });
+    }
+
+    if (btnCancel) {
+      btnCancel.addEventListener('click', () => {
+        const confirmed = confirm('미리보기를 취소하시겠습니까?\n업로드 시도가 안전하게 폐기되며 기존 운영 데이터베이스 144행이 그대로 유지됩니다.');
+        if (confirmed) {
+          alert('미리보기가 취소되었습니다. 기존 144개 레코드가 안전하게 유지됩니다.');
+        }
+      });
+    }
+
+    if (btnResolveOverwrite) {
+      btnResolveOverwrite.addEventListener('click', () => {
+        alert('발견된 오류 3건(음수 기성액, 100% 초과 공정률, 중복 행)에 대한 자동 정정 마법사를 실행합니다.');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-sm mt-space-lg shadow-[0_-1px_4px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div>건설사업본부 공무관리시스템 · 현장 공정기성 심사기준 v3.2 · 전사 12개 프로젝트 실시간 감리연동</div><div class="flex items-center gap-space-md"><span>보안인가등급: Confidential Level 2</span><span>시스템 문의: 본사 공무팀 내선 4421</span></div></div></footer></body></html>

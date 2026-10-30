@@ -1,0 +1,12 @@
+'use client';
+import { useMemo } from 'react';
+import Link from 'next/link';
+import { EmptyState } from '../components/shell';
+import { TrendChart } from '../components/trend-chart';
+import { format, summary, trend } from '../lib/domain';
+import { useApp } from '../state/provider';
+export default function Overview(){
+ const {state}=useApp(); const data=useMemo(()=>summary(state.records,state.filters),[state.records,state.filters]); const points=useMemo(()=>trend(state.records,state.filters),[state.records,state.filters]);
+ const cards=[{label:'전체 기성률',value:data.earnedRate,unit:'%',tone:'blue',note:'누적기성액 ÷ 계약금액'},{label:'계획공정률',value:data.planned,unit:'%',tone:'slate',note:'계약금액 가중평균'},{label:'실제공정률',value:data.actual,unit:'%',tone:'teal',note:'계약금액 가중평균'},{label:'공정차이',value:data.gap,unit:' pp',tone:data.gap!==null&&data.gap<0?'red':'teal',note:'실제공정률 − 계획공정률'}];
+ return <><div className="pageHeading"><div><p className="eyebrow">FIELD OVERVIEW</p><h1>현황 요약</h1><p className="muted">전체 흐름을 먼저 보고, 현장별 변화를 확인하세요.</p></div><span className="rangeBadge">{state.filters.month} 기준 · {data.rows.length}개 현장</span></div>{state.notice&&<p className="notice" role="status">✓ {state.notice}</p>}{!state.records.length?<EmptyState/>:<><div className="metrics">{cards.map(c=><section key={c.label} className={`metric ${c.tone}`} aria-label={c.label}><div className="metricLabel">{c.label}</div><div className="metricValue">{c.value===null?<span className="unavailable">계산 불가</span>:<>{format(c.value)}<span className="metricUnit">{c.unit}</span></>}</div><div className="meter"><span style={{width:`${Math.min(100,Math.abs(c.value??0))}%`}}/></div><p>{c.note}</p></section>)}</div>{!data.rows.length&&<EmptyState filtered/>}<section className="panel amounts" aria-label="기성 금액"><div className="amountHeading"><h2>기성 금액</h2><span>단위: 백만원</span></div><dl><div><dt>계약금액</dt><dd>{format(data.contract)}</dd></div><div><dt>누적기성액 <small>선택 월말까지</small></dt><dd>{format(data.earned)}</dd></div><div><dt>당월기성액 <small>바로 전월과의 차액</small></dt><dd className="accent">{format(data.monthly)}</dd></div></dl>{data.monthly===null&&<p className="footnote">{data.monthlyReason}</p>}{data.missing.length>0&&<p className="warning" role="status">{data.missing.join(', ')}의 선택 월 자료가 없습니다. 확인 가능한 {data.rows.length}개 현장만 누적 지표에 집계했습니다.</p>}</section><TrendChart points={points}/><div className="bottomHint"><span>자료는 현재 브라우저에만 보관됩니다. 새로고침하면 다시 가져와 주세요.</span><Link href="/import">자료 바꾸기 →</Link></div></>}</>;
+}
