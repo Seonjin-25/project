@@ -1,0 +1,21 @@
+# Local API keys
+.env.local
+
+node_modules/
+.next/
+coverage/
+.vitest/
+*.tsbuildinfo
+artifacts/
+.env*
+.npm-cache/
+
+.tools/
+
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+.pnp.*
+
+# Superseded local installer
+.yarn/releases/yarn-4.9.2.cjs
